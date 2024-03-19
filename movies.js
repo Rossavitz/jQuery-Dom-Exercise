@@ -1,4 +1,5 @@
-$("#submitBtn").on("click", function () {
+$("#submitBtn").on("click", function (e) {
+  e.preventDefault();
   // on submit
   let movie = $(".inputs").eq(0).val(); //pull value from movie input
   let rating = $(".inputs").eq(1).val(); // pull value from rating input
